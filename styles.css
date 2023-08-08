@@ -1,0 +1,429 @@
+/* CSS to style the sidebar and headings */
+.sidebar {
+    width: 100%;
+    /* Adjust width as needed */
+    background-color: #3c705b;
+    /* Adjust background color as needed */
+    padding: 10px;
+    /* Adjust padding as needed */
+    display: flex;
+    /* Enable flexbox layout */
+    flex-direction: row;
+    /* Arrange items horizontally */
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 10px;
+}
+
+.sidebar .buttons-left {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar button {
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    /* Adjust font size as needed */
+    font-weight: bold;
+    /* Adjust font weight as needed */
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 5px;
+    /* Adjust the margin to create space between the buttons */
+}
+
+.sidebar button:focus {
+    background-color: #b8c9be;
+    /* Adjust selected button background color as needed */
+}
+
+.sidebar img {
+    max-width: 100%;
+    margin-right: 5px;
+    /* Adjust the margin to create space between the image and buttons */
+}
+
+img {
+    width: 100%;
+    height: 10vh;
+    object-fit: cover;
+}
+
+/* .sidebar {
+    background-color: rgb(38, 73, 38);
+} */
+
+.welcome {
+    flex: 1;
+    /* This div takes up half of the width */
+    background-color: #b8c9be;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome img {
+    width: 60%;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain the aspect ratio */
+    max-width: 100%;
+    /* Allow the image to scale down if needed */
+    max-height: 100%;
+    /* Allow the image to scale down if needed */
+    border-radius: 10px;
+}
+
+
+.Introduction {
+    display: flex;
+    height: 2000 px;
+    margin-right: 10px;
+}
+
+.Title {
+    font-size: 18px;
+    color: #444b3c;
+    /* Green-grey color */
+    font-weight: bold;
+    line-height: 1.2;
+    /* Adjust the line height as needed */
+    margin-bottom: 7em;
+    margin-left: 30px;
+}
+
+.Introduction-content {
+    margin-top: 20px;
+    /* Add margin at the top to separate from the title */
+    margin-bottom: 7em;
+    margin-left: 30px;
+}
+
+.Introduction-content h3 {
+    line-height: 1.5;
+}
+
+/* Clear the floats to ensure proper layout */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.Video {
+    width: 50%;
+    float: right;
+    clear: right;
+}
+
+.Video video {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.Video {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 20px;
+}
+
+.footer-row img {
+    margin-right: 40px;
+    width: 100px;
+    height: 40px;
+    max-width: 100%;
+    /* Ensure the image takes up the full available width */
+    height: auto;
+    /* Maintain the aspect ratio */
+    border-radius: 10px;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-block a {
+    margin-right: 10px;
+}
+
+.person-container {
+    display: flex;
+}
+
+.person {
+    flex: 1;
+    text-align: center;
+}
+
+.person-container .person img {
+    height: 200px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.global-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-row {
+    text-align: center;
+    /* Center the image horizontally */
+}
+
+.footer-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.footer-block img {
+    border-radius: 10px;
+}
+
+
+.footer-block a {
+    margin-right: 10px;
+}
+
+.contact-form {
+    background-color: #abbeb3;
+    padding: 20px;
+}
+
+.contact-form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #779e85;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+    margin-top: 0;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.contact-form {
+    display: flex;
+    align-items: stretch;
+    /* Adjust alignment as needed */
+}
+
+.contact-form-container {
+    flex: 1;
+    /* This div takes up half of the width */
+    padding: 20px;
+}
+
+.text h3,
+.text1 h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.text {
+    margin-top: 10em;
+    /* Add margin at the top to create space */
+}
+
+.text1 {
+    margin-top: 10em;
+    /* Add margin at the top to create space */
+}
+
+.button {
+    display: inline-block;
+    background-color: #328151;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2c6d43;
+}
+
+services {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+.programs {
+    flex: 1;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
+    font-size: 36px;
+    /* Add margin to move the heading downward */
+}
+
+.imagepro {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.imagepro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.imagepro p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+}
+
+.publications {
+    flex: 1;
+    padding: 20px;
+}
+
+.publications h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.imagepub {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.imagepub img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.clients {
+    flex: 1;
+    padding: 20px;
+}
+
+.clients h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.container {
+    display: flex;
+}
+
+.clients {
+    flex: 1;
+    padding: 20px;
+}
+
+.clients h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.imagecli {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial-container {
+    margin-bottom: 20px; /* Add spacing between testimonial containers */
+}
+
+.testimonial {
+    position: relative;
+}
+
+.testimonial::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #78af9d; /* Grey line color */
+    position: absolute;
+    bottom: -10px; /* Adjust the value for spacing */
+    left: 0;
+}
+
+.testimonial-content {
+    background-color: #9c9e7f; /* Grey background color */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+    display: flex;
+    align-items: center;
+}
+
+.testimonial img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 50%; /* Set the border radius to 50% for round shape */
+    margin-right: 20px;
+}
+
+.testimonial p {
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left; /* Align the quotes to the left */
+    margin: 0; /* Remove margin to ensure the text touches the edges */
+}
