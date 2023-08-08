@@ -1,8 +1,8 @@
 <?php
 // Replace these with your actual database connection details
-$servername = "http://localhost/phpmyadmin";
-$username = "my_username";
-$password = "my_password";
+$servername = "localhost";
+$username = "telesphoreuwabera";
+$password = "91073@Tecy";
 $dbname = "clients";
 
 // Create connection
