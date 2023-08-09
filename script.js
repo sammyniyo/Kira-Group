@@ -85,3 +85,23 @@ document.addEventListener('DOMContentLoaded', function () {
       // You can add more validation checks for other fields here
     });
   });
+   // Example: You can add subscription-side form validation here
+   document.addEventListener('DOMContentLoaded', function () {
+    const form = document.querySelector('.subscription-form form');
+    form.addEventListener('submit', function (event) {
+      const nameInput = form.querySelector('#name');
+      const surnameInput = form.querySelector('#surname');
+      const emailInput = form.querySelector('#email');
+  
+      // Example validation: Ensure email is in a valid format
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(emailInput.value)) {
+        event.preventDefault();
+        alert('Please enter a valid email address.');
+        return;
+      }
+  
+      // You can add more validation checks for other fields here
+    });
+  });
+  
