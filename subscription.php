@@ -25,7 +25,7 @@ $stmt->bind_param("sss", $name, $surname, $email);
 if ($stmt->execute()) {
     $stmt->close();
     $conn->close();
-    echo "subscription submitted successfully!";
+    echo "Subscription submitted successfully!";
 } else {
     echo "Error: " . $stmt->error;
 }

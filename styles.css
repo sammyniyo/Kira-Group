@@ -461,12 +461,11 @@ services {
     margin: 0;
     /* Remove margin to ensure the text touches the edges */
 }
-
 .Subscription-form {
     background-color: #505250;
     padding: 20px;
     border-radius: 10px;
-    text-align: center; /* Center-align form elements */
+    text-align: center;
 }
 
 .Subscription-form h1 {
@@ -495,11 +494,13 @@ services {
 
 .Subscription-form input {
     padding: 10px;
-    margin-bottom: 10px;
     border: 1px solid #607e60;
     border-radius: 5px;
     font-size: 16px;
-    width: 100%; /* Make input fields expand to the full width */
+    width: 100%;
+    display: block;
+    margin: 0 auto; /* Center-align the input fields horizontally */
+    margin-bottom: 10px; /* Add a small margin at the bottom of each input field */
 }
 
 .Subscription-form button {
@@ -511,6 +512,8 @@ services {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto; /* Center-align the button horizontally */
 }
 
 .Subscription-form button:hover {
