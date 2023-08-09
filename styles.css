@@ -13,7 +13,8 @@
     align-items: center;
     justify-content: space-between;
     max-width: 100%;
-    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .sidebar .buttons-left {
@@ -50,11 +51,6 @@ img {
     height: 10vh;
     object-fit: cover;
 }
-
-/* .sidebar {
-    background-color: rgb(38, 73, 38);
-} */
-
 .welcome {
     flex: 1;
     /* This div takes up half of the width */
