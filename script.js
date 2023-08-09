@@ -51,15 +51,15 @@ function redirectToAboutUs() {
   function redirectToServices() {
     window.location.href = "Services.html";
   }
-  function redirectToPrograms() {
-    window.location.href = "Programs.html";
-  }
+  // function redirectToPrograms() {
+  //   window.location.href = "Programs.html";
+  // }
   function redirectToPublications() {
     window.location.href = "Publications.html";
   }
-  function redirectToClients() {
-    window.location.href = "Clients.html";
-  }
+  // function redirectToClients() {
+  //   window.location.href = "Clients.html";
+  // }
   function redirectToPartners() {
     window.location.href = "Partners.html";
   }
