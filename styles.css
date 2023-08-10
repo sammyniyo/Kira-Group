@@ -586,3 +586,24 @@ services {
 @media (max-width: 1024px) {
     /* Add specific styles for tablet screens if needed */
 }
+
+/* Adjust person-container to use flexbox and column layout on small screens */
+.person-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items to new lines */
+    justify-content: center; /* Center items horizontally */
+}
+
+/* Style for each person item */
+.person {
+    width: 50%; /* Each person takes 50% width on small screens */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in total width */
+}
+
+/* Media query to adjust the layout on small screens */
+@media (max-width: 768px) {
+    .person {
+        width: 100%; /* Each person takes full width on small screens (single column) */
+    }
+}
