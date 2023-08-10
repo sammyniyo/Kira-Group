@@ -740,3 +740,18 @@ services {
 .pop-video {
     animation: pop 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+/* Add this CSS rule to underline the sidebar div */
+.sidebar {
+    border-bottom: 2px solid green;
+    width: 100%;
+}
+
+/* Add this CSS rule to style the sidebar buttons */
+.sidebar button {
+    text-decoration: none;
+}
+
+/* Add this CSS rule to change button appearance on hover */
+.sidebar button:hover {
+    text-decoration: underline;
+}
