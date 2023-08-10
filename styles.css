@@ -627,6 +627,32 @@ services {
     box-sizing: border-box;
     /* Include padding in total width */
 }
+/* Style for the publications div */
+.publications {
+    display: flex;
+    flex-direction: column; /* Default layout, vertical on larger screens */
+}
+
+/* Style for the imagepub div */
+.imagepub {
+    text-align: center; /* Center the image horizontally */
+    margin-top: 20px; /* Add some top margin */
+}
+
+/* Media query for smaller screens (phone screens) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column-reverse; /* Reverse the column order on smaller screens */
+    }
+
+    .publications {
+        text-align: center; /* Center the text horizontally on smaller screens */
+    }
+
+    .imagepub {
+        margin-top: 0; /* Remove top margin on smaller screens */
+    }
+}
 
 /* Media query to adjust the layout on small screens */
 @media (max-width: 768px) {
