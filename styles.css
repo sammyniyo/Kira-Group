@@ -298,7 +298,7 @@ footer {
 }
 
 .full-width-image {
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
     border-radius: 20px;
 }
@@ -596,14 +596,19 @@ services {
 
 /* Style for each person item */
 .person {
-    width: 50%; /* Each person takes 50% width on small screens */
+    width: 50%; /* Each person takes 50% width on larger screens */
     padding: 10px;
     box-sizing: border-box; /* Include padding in total width */
 }
 
 /* Media query to adjust the layout on small screens */
 @media (max-width: 768px) {
+    .person-container {
+        flex-direction: column; /* Switch to a single column on small screens */
+        align-items: center; /* Center items vertically */
+    }
     .person {
         width: 100%; /* Each person takes full width on small screens (single column) */
+        margin-bottom: 20px; /* Add margin between images on small screens */
     }
 }
