@@ -630,25 +630,24 @@ services {
 
 /* Media query to adjust the layout on small screens */
 @media (max-width: 768px) {
-    .person-container {
-        display: flex;
-        flex-direction: column;
-        /* Single column layout on small screens */
-        justify-content: center;
-        /* Center items horizontally */
-        align-items: center;
-        /* Center items vertically */
-    }
+    /* Style the person-container in the Partners page */
+.person-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center items horizontally */
+    margin: 20px auto; /* Center the container within the page */
+}
 
-    .person {
-        width: 100%;
-        /* Each person takes full width on small screens (single column) */
-        padding: 10px;
-        box-sizing: border-box;
-        /* Include padding in total width */
-        text-align: center;
-        /* Center the image within each person item */
-    }
+/* Style each person item */
+.person {
+    width: 100%; /* Each person takes full width on all screen sizes */
+    max-width: 300px; /* Set a maximum width for better presentation */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in total width */
+    text-align: center; /* Center the image within each person item */
+    margin-bottom: 20px; /* Add margin between images */
+}
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
