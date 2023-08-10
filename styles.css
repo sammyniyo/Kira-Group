@@ -458,6 +458,17 @@ services {
     margin-right: 20px;
 }
 
+#mobileMenu {
+    display: none;
+    /* Add additional styling for the mobile menu, e.g., background, font size, etc. */
+}
+
+@media (max-width: 768px) {
+    #mobileMenu {
+        display: block;
+    }
+}
+
 .testimonial p {
     font-size: 18px;
     line-height: 1.5;

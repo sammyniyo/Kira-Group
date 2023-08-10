@@ -118,3 +118,14 @@ document.addEventListener('DOMContentLoaded', function () {
         // You can add more validation checks for other fields here
     });
 });
+// Toggle mobile menu
+function toggleMobileMenu() {
+    const mobileMenu = document.getElementById("mobileMenu");
+    mobileMenu.classList.toggle("hidden");
+}
+
+// Add a click event listener to the mobile menu icon (hamburger icon)
+document.addEventListener('DOMContentLoaded', function () {
+    const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
+    mobileMenuIcon.addEventListener('click', toggleMobileMenu);
+});
