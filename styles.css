@@ -458,17 +458,6 @@ services {
     margin-right: 20px;
 }
 
-#mobileMenu {
-    display: none;
-    /* Add additional styling for the mobile menu, e.g., background, font size, etc. */
-}
-
-@media (max-width: 768px) {
-    #mobileMenu {
-        display: block;
-    }
-}
-
 .testimonial p {
     font-size: 18px;
     line-height: 1.5;
@@ -538,4 +527,62 @@ services {
 
 .Subscription-form button:hover {
     background-color: #45a049;
+}
+
+/* Your existing CSS rules */
+
+/* Mobile menu styles */
+#mobileMenu {
+    display: none;
+    /* Add additional styling for the mobile menu, e.g., background, font size, etc. */
+}
+
+/* Show mobile menu icon on small screens */
+@media (max-width: 768px) {
+    #mobileMenu {
+        display: block;
+    }
+
+    /* Adjust alignment and font size for smaller screens */
+    .sidebar {
+        flex-direction: column;
+        /* Stack items vertically */
+        align-items: stretch;
+        /* Stretch items to full width */
+        padding: 10px 0;
+        /* Reduce top and bottom padding */
+    }
+
+    .sidebar .buttons-left {
+        flex-direction: column;
+        /* Stack buttons vertically */
+    }
+
+    .sidebar button {
+        font-size: 16px;
+        /* Reduce font size for buttons */
+    }
+
+    /* Adjust text size for smaller screens */
+    .Title {
+        font-size: 16px;
+        margin-bottom: 3em;
+        /* Reduce margin */
+        margin-left: 10px;
+        /* Adjust margin */
+    }
+
+    .Introduction-content {
+        margin-top: 10px;
+        /* Reduce margin */
+        margin-bottom: 3em;
+        /* Reduce margin */
+        margin-left: 10px;
+        /* Adjust margin */
+    }
+}
+
+/* Tablet-specific styles */
+@media (max-width: 1024px) {
+    /* Add specific styles for tablet screens if needed */
 }
