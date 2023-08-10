@@ -582,6 +582,29 @@ services {
     }
 }
 
+/* Style the logo button */
+.logo-button {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+/* Set a fixed size for the image within the button */
+.logo-button img {
+    width: 100px;
+    /* Adjust the width as needed */
+    height: auto;
+    /* Maintain the aspect ratio */
+}
+
+/* Media query for smaller screens (e.g., smartphones) */
+@media (max-width: 768px) {
+    .logo-button img {
+        width: 80px;
+        /* Reduce the size of the image for smaller screens */
+    }
+}
+
 /* Tablet-specific styles */
 @media (max-width: 1024px) {
     /* Add specific styles for tablet screens if needed */
@@ -609,21 +632,29 @@ services {
 @media (max-width: 768px) {
     .person-container {
         display: flex;
-        flex-direction: column; /* Single column layout on small screens */
-        justify-content: center; /* Center items horizontally */
-        align-items: center; /* Center items vertically */
+        flex-direction: column;
+        /* Single column layout on small screens */
+        justify-content: center;
+        /* Center items horizontally */
+        align-items: center;
+        /* Center items vertically */
     }
 
     .person {
-        width: 100%; /* Each person takes full width on small screens (single column) */
+        width: 100%;
+        /* Each person takes full width on small screens (single column) */
         padding: 10px;
-        box-sizing: border-box; /* Include padding in total width */
-        text-align: center; /* Center the image within each person item */
+        box-sizing: border-box;
+        /* Include padding in total width */
+        text-align: center;
+        /* Center the image within each person item */
     }
 }
+
 @media (min-width: 320px) and (max-width: 768px) {
     .person-container {
-        margin-top: 20px; /* Add top margin on small screens */
+        margin-top: 20px;
+        /* Add top margin on small screens */
     }
 }
 
@@ -646,14 +677,17 @@ services {
     transform: translateY(10px);
     /* Adjust the distance for the parallax effect */
 }
+
 /* Keyframes for dancing and fading out the image */
 @keyframes dance {
     0% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-30px);
     }
+
     100% {
         transform: translateY(0);
     }
@@ -664,6 +698,7 @@ services {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -678,11 +713,23 @@ services {
     opacity: 0;
     animation: fade-in 1s ease-out 2s forwards;
 }
+
 /* Keyframes for the "pop" animation */
 @keyframes pop {
-    0% { transform: scale(1); opacity: 0; }
-    50% { transform: scale(1.1); opacity: 1; }
-    100% { transform: scale(1); opacity: 1; }
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 /* Apply the "pop" animation to specific elements */
