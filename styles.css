@@ -590,25 +590,106 @@ services {
 /* Adjust person-container to use flexbox and column layout on small screens */
 .person-container {
     display: flex;
-    flex-wrap: wrap; /* Wrap items to new lines */
-    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap;
+    /* Wrap items to new lines */
+    justify-content: center;
+    /* Center items horizontally */
 }
 
 /* Style for each person item */
 .person {
-    width: 50%; /* Each person takes 50% width on larger screens */
+    width: 50%;
+    /* Each person takes 50% width on larger screens */
     padding: 10px;
-    box-sizing: border-box; /* Include padding in total width */
+    box-sizing: border-box;
+    /* Include padding in total width */
 }
 
 /* Media query to adjust the layout on small screens */
 @media (max-width: 768px) {
     .person-container {
-        flex-direction: column; /* Switch to a single column on small screens */
+        display: flex;
+        flex-direction: column; /* Single column layout on small screens */
+        justify-content: center; /* Center items horizontally */
         align-items: center; /* Center items vertically */
     }
+
     .person {
         width: 100%; /* Each person takes full width on small screens (single column) */
-        margin-bottom: 20px; /* Add margin between images on small screens */
+        padding: 10px;
+        box-sizing: border-box; /* Include padding in total width */
+        text-align: center; /* Center the image within each person item */
     }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    .person-container {
+        margin-top: 20px; /* Add top margin on small screens */
+    }
+}
+
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    /* Adjust the height to your preference */
+}
+
+.parallax-image {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 1.2s ease-out;
+}
+
+.parallax-container:hover .parallax-image {
+    transform: translateY(10px);
+    /* Adjust the distance for the parallax effect */
+}
+/* Keyframes for dancing and fading out the image */
+@keyframes dance {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Keyframes for fading in the new image */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Additional styles for the dancing effect */
+.dance-image {
+    animation: dance 2s infinite;
+}
+
+.person img {
+    opacity: 0;
+    animation: fade-in 1s ease-out 2s forwards;
+}
+/* Keyframes for the "pop" animation */
+@keyframes pop {
+    0% { transform: scale(1); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* Apply the "pop" animation to specific elements */
+.pop-text {
+    animation: pop 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.pop-video {
+    animation: pop 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }

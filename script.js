@@ -129,3 +129,18 @@ document.addEventListener('DOMContentLoaded', function () {
     const mobileMenuIcon = document.querySelector('.mobile-menu-icon');
     mobileMenuIcon.addEventListener('click', toggleMobileMenu);
 });
+// Function to add "pop" class to elements when they are clicked
+function addPopAnimation(elementId) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        element.classList.add('pop-text');
+    }
+}
+
+// Add "pop" animation to the video when it's clicked
+document.getElementById('myVideo').addEventListener('click', function () {
+    const videoElement = document.getElementById('myVideo');
+    if (videoElement) {
+        videoElement.classList.add('pop-video');
+    }
+});
