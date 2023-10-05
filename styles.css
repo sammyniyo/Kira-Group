@@ -780,3 +780,25 @@ services {
 .sidebar button:hover {
     text-decoration: underline;
 }
+/* Define the droplet animation */
+@keyframes droplet-fall {
+    0% {
+      transform: translateY(-10px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(200px);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply styles to the droplets */
+  .water-droplet {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #0074cc; /* Adjust color as needed */
+    border-radius: 50%;
+    animation: droplet-fall 3s linear infinite;
+  }
+  

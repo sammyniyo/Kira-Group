@@ -144,3 +144,19 @@ document.getElementById('myVideo').addEventListener('click', function () {
         videoElement.classList.add('pop-video');
     }
 });
+// Function to create a water droplet element
+function createDroplet() {
+    const droplet = document.createElement('div');
+    droplet.className = 'water-droplet';
+    droplet.style.left = `${Math.random() * 100}%`; // Random horizontal position
+    document.getElementById('water-droplets-container').appendChild(droplet);
+  }
+  
+  // Create water droplets when the page loads
+  window.addEventListener('load', function () {
+    const dropletCount = 20; // Number of droplets to create
+    for (let i = 0; i < dropletCount; i++) {
+      createDroplet();
+    }
+  });
+  
