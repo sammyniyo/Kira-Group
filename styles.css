@@ -800,6 +800,8 @@ services {
     /* Zoom-out effect for images with a delay of 0.6s */
     img {
         animation: zoomOut 0.6s 0.6s both;
+        max-width: 100%; /* Example: Reduce the image width */
+        margin-right: 5px; /* Example: Adjust margin */
     }
 
     @keyframes zoomOut {
