@@ -725,24 +725,33 @@ services {
     }
 }
 @media (max-width: 768px) {
-    .Introduction {
-        flex-direction: column; /* Stack content vertically */
+    .Introduction, .Video {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .Video {
+        animation: zoomInVideo 0.6s 0.6s both;
+        overflow: hidden;
+    }
+
+    .Video video {
+        width: 100%;
+        height: auto;
+    }
+
+    @keyframes zoomInVideo {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
     }
 }
-@keyframes dance {
-    0% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-30px);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}
-
 /* Keyframes for fading in the new image */
 @keyframes fade-in {
     0% {
