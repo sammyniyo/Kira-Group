@@ -561,13 +561,13 @@ services {
     }
 
     .sidebar button {
-        font-size: 12px;
+        font-size: 10px;
         /* Reduce font size for buttons */
     }
 
     /* Adjust text size for smaller screens */
     .Title {
-        font-size: 10px; /* Reduce font size for the title */
+        font-size: 8px; /* Reduce font size for the title */
         margin-bottom: 3em; /* Reduce margin */
     }
 
@@ -579,7 +579,7 @@ services {
 @media (max-width: 768px) {
     .sidebar-image {
         /* Adjust styles for smaller screens if needed */
-        max-width: 80%; /* Example: Reduce the image width */
+        max-width: 100%; /* Example: Reduce the image width */
         margin-right: 5px; /* Example: Adjust margin */
     }
 }
