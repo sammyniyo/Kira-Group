@@ -876,19 +876,14 @@ services {
     margin-right: 10px;
     /* Adjust the margin between images */
 }
-/* Add this CSS for responsive sidebar */
 @media screen and (max-width: 768px) {
     .sidebar {
-        display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        padding: 10px;
+        width: 100%; /* Make the sidebar occupy the full width */
     }
 
     .sidebar button {
-        flex-basis: 45%;
-        margin: 5px;
+        flex-grow: 1;
+        width: auto; /* Allow buttons to grow and take available width */
     }
 }
