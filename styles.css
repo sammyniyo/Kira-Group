@@ -813,18 +813,6 @@ services {
     }
 }
 
-/* Apply styles to the droplets */
-.water-droplet {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: blue;
-    /* Set the droplet color to blue */
-    border-radius: 50%;
-    animation: droplet-fall 5s linear infinite;
-    /* Adjust the animation duration as needed */
-}
-
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -887,4 +875,20 @@ services {
     /* Adjust the width as needed */
     margin-right: 10px;
     /* Adjust the margin between images */
+}
+/* Add this CSS for responsive sidebar */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .sidebar button {
+        flex-basis: 45%;
+        margin: 5px;
+    }
 }
