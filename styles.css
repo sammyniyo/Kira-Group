@@ -728,27 +728,7 @@ services {
     .Introduction {
         flex-direction: column; /* Stack content vertically */
     }
-
-    .Video {
-        animation: zoomInVideo 0.6s 0.6s both; /* Apply zoom in animation with delay */
-        overflow: hidden; /* Hide overflow to prevent scrollbars */
-    }
-
-    .Video video {
-        width: 100%; /* Zoom in to fit the page width */
-        height: auto; /* Maintain aspect ratio */
-    }
-
-    @keyframes zoomInVideo {
-        0% {
-            transform: scale(0);
-            opacity: 0;
-        }
-        100% {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
+}
 @keyframes dance {
     0% {
         transform: translateY(0);
