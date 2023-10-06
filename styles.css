@@ -589,12 +589,6 @@ services {
     border: none;
     padding: 0;
 }
-@media (max-width: 768px) {
-    body {
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-}
 /* Set a fixed size for the image within the button */
 .logo-button img {
     width: 100px;
