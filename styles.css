@@ -876,3 +876,9 @@ services {
     margin-right: 10px;
     /* Adjust the margin between images */
 }
+/* Add this CSS rule to remove underline on small devices */
+@media (max-width: 768px) {
+    .sidebar button {
+        text-decoration: none;
+    }
+}
