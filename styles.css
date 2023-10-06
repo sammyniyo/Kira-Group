@@ -561,13 +561,13 @@ services {
     }
 
     .sidebar button {
-        font-size: 10px;
+        font-size: 8px;
         /* Reduce font size for buttons */
     }
 
     /* Adjust text size for smaller screens */
     .Title {
-        font-size: 8px; /* Reduce font size for the title */
+        font-size: 6px; /* Reduce font size for the title */
         margin-bottom: 3em; /* Reduce margin */
     }
 
