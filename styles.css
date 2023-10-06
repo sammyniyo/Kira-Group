@@ -877,15 +877,18 @@ services {
     /* Adjust the margin between images */
 }
 /* Add this CSS for responsive sidebar */
-/* Media query for screens smaller than 768px (adjust the breakpoint as needed) */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .sidebar {
-        width: 100%; /* Use full width on smaller screens */
-        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px;
     }
+
     .sidebar button {
-        width: 100%; /* Make buttons occupy full width */
-        text-align: left; /* Align text to the left */
-        padding: 10px 15px; /* Add some padding for better touch interaction */
+        flex-basis: 45%;
+        margin: 5px;
     }
 }
