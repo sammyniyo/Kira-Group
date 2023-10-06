@@ -547,7 +547,7 @@ services {
 
     /* Adjust alignment and font size for smaller screens */
     .sidebar {
-        flex-direction: column;
+        flex-direction: row;
         /* Stack items vertically */
         align-items: stretch;
         /* Stretch items to full width */
@@ -556,7 +556,7 @@ services {
     }
 
     .sidebar .buttons-left {
-        flex-direction: column;
+        flex-direction: row;
         /* Stack buttons vertically */
     }
 
@@ -875,15 +875,4 @@ services {
     /* Adjust the width as needed */
     margin-right: 10px;
     /* Adjust the margin between images */
-}
-@media screen and (max-width: 768px) {
-    .sidebar {
-        flex-direction: row;
-        width: 100%; /* Make the sidebar occupy the full width */
-    }
-
-    .sidebar button {
-        flex-grow: 1;
-        width: auto; /* Allow buttons to grow and take available width */
-    }
 }
