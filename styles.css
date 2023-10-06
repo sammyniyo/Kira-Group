@@ -724,41 +724,31 @@ services {
         text-decoration: none;
     }
 }
-/* Additional CSS for small screens */
 @media (max-width: 768px) {
     .Introduction {
         flex-direction: column; /* Stack content vertically */
     }
 
-    /* Style for the Video section */
     .Video {
-        order: 3; /* Change the order to make it appear after Introduction and Subscription-form */
-        animation: zoomIn 0.6s ease 0.6s both, fadeInUp 0.6s ease 0.6s both; /* Apply animations */
+        animation: zoomInVideo 0.6s 0.6s both; /* Apply zoom in animation with delay */
+        overflow: hidden; /* Hide overflow to prevent scrollbars */
     }
-}
 
-/* Keyframes for the zoom-in effect */
-@keyframes zoomIn {
-    from {
-        transform: scale(0); /* Start from 0% scale */
+    .Video video {
+        width: 100%; /* Zoom in to fit the page width */
+        height: auto; /* Maintain aspect ratio */
     }
-    to {
-        transform: scale(1); /* End at 100% scale */
-    }
-}
 
-/* Keyframes for the fadeInUp effect */
-@keyframes fadeInUp {
-    from {
-        opacity: 0; /* Start from transparent */
-        transform: translateY(20px); /* Move down by 20px */
+    @keyframes zoomInVideo {
+        0% {
+            transform: scale(0);
+            opacity: 0;
+        }
+        100% {
+            transform: scale(1);
+            opacity: 1;
+        }
     }
-    to {
-        opacity: 1; /* End with full opacity */
-        transform: translateY(0); /* Return to normal position */
-    }
-}
-
 @keyframes dance {
     0% {
         transform: translateY(0);
