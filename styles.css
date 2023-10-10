@@ -927,30 +927,51 @@ services {
     /* Adjust the margin between images */
 }
 /* Add this CSS rule to remove underline on small devices */
-/* Default styles for larger screens */
-.content-container {
-    max-width: 800px; /* Adjust the maximum width as needed */
-    margin: 0 auto; /* Center the content horizontally */
-    padding: 20px;
+/* Add these CSS rules to your existing stylesheet */
+.title-heading {
+    font-weight: bold;
+    animation: wipe 3s ease-in-out, zoom-out 3s ease-in-out; /* Apply the wipe and zoom-out animations */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflow content */
+    color: green;
 }
 
-/* Media query for screens with a maximum width of 768px (typical tablets) */
-@media (max-width: 768px) {
-    .content-container {
-        max-width: 100%; /* Full width for smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens if needed */
+/* Keyframes for the wipe animation */
+@keyframes wipe {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
     }
 }
-.person {
-    margin-bottom: 20px;
-    text-align: center;
+
+/* Keyframes for the zoom-out animation */
+@keyframes zoom-out {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+/* Define the custom CSS class for the animation container */
+.animation-container {
+    opacity: 0; /* Start with opacity set to 0 */
+    transform: translateY(20px); /* Start with a downward translation */
+
+    /* Apply the animation */
+    animation: ascend 3s ease-in-out 0.2s forwards;
 }
 
-.person img {
-    max-width: 100%; /* Make the images responsive */
-    height: auto;
-}
-
-.text-box {
-    text-align: left; /* Align the text to the left */
+/* Keyframes for the ascend animation */
+@keyframes ascend {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start position */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End position */
+    }
 }
