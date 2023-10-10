@@ -975,3 +975,45 @@ services {
         transform: translateY(0); /* End position */
     }
 }
+footer {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+hr {
+    margin: 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav, .footer-news, .footer-quick-links {
+    padding: 0;
+}
+
+.footer-nav-link, .footer-news a, .footer-quick-links a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Add additional styles as needed */
