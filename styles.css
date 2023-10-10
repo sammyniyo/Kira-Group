@@ -576,6 +576,17 @@ services {
         margin-bottom: 3em; /* Reduce margin */
     }
 }
+@media screen and (max-width: 768px) {
+    .contact-form {
+      flex-direction: column; /* Change the direction to column for smaller screens */
+    }
+  
+    .welcome {
+      order: 1; /* Change the order to display "welcome" below "contact-form" */
+      margin-top: 20px; /* Add some space between the two sections */
+    }
+  }
+  
 @media (max-width: 768px) {
     .sidebar-image {
         /* Adjust styles for smaller screens if needed */
