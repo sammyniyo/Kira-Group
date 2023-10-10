@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" type="image/png" href="Kira-Final-Logo-removebg-preview.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: #c8cfcf;
+            margin: 0
+        }
+    </style>
 </head>
 
 <body>
@@ -14,14 +20,12 @@
             <button class="logo-button" onclick="redirectToImage()">
                 <img src="Kira-Final-Logo-removebg-preview.png" alt="Kira Group">
             </button>
-            <button class="active" onclick="redirectToHome()">Home</button>
-            <button class="active" onclick="redirectToAboutUs()">About us</button>
-            <button class="active" onclick="redirectToServices()">Services</button>
-            <!-- <button class="active" onclick="redirectToPrograms()">Programs</button> -->
-            <button class="active" onclick="redirectToPublications()">Publications</button>
-            <!-- <button class="active" onclick="redirectToClients()">Clients</button> -->
-            <button class="active" onclick="redirectToPartners()"> Partners</button>
-            <button class="active" onclick="redirectToContacts()">Contacts</button>
+            <button id="home-link" onclick="redirectToHome()">Home</button>
+            <button id="about-link" onclick="redirectToAboutUs()">About us</button>
+            <button id="services-link" onclick="redirectToServices()">Services</button>
+            <button id="publications-link" onclick="redirectToPublications()">Publications</button>
+            <button id="partners-link" onclick="redirectToPartners()">Partners</button>
+            <button id="contacts-link" onclick="redirectToContacts()">Contacts</button>
         </div>
         <center>
             <h2>We are here to hear you! </h2>

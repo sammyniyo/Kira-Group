@@ -538,7 +538,30 @@ services {
     display: none;
     /* Add additional styling for the mobile menu, e.g., background, font size, etc. */
 }
-
+/* Define the animation */
+@keyframes zoomOut {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      color: green;
+      transform: scale(1.1);
+    }
+    100% {
+      color: green;
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply initial styles to all page links */
+  button {
+    color: black;
+  }
+  /* Apply initial styles to the active page link */
+  button.active {
+    color: green;
+    animation: zoomOut 2s infinite; /* Adjust the animation duration as needed */
+  }  
 /* Show mobile menu icon on small screens */
 @media (max-width: 768px) {
     #mobileMenu {
