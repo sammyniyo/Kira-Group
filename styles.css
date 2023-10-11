@@ -1064,3 +1064,15 @@ ul {
 .post {
     text-align: justify;
 }
+@media screen and (min-width: 768px) {
+    /* Reset the layout for screens wider than 768px */
+    .about-us {
+        flex-direction: row;
+    }
+
+    .about-us-image {
+        order: 2;
+        max-width: none;
+        width: auto;
+    }
+}
