@@ -1143,7 +1143,7 @@ ul {
 }
 /* Add this CSS to your stylesheet */
 .Video {
-    order: 2; /* Change the order to make it appear below the Introduction-content on small screens */
+    order: 3; /* Change the order to make it appear below the Introduction-content on small screens */
 }
 
 @media screen and (min-width: 768px) {
