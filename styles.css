@@ -1129,12 +1129,11 @@ ul {
 /* Add this CSS to your stylesheet */
 .About-Us {
     display: flex;
-    flex-direction: column;
 }
 
 .about-us-image {
     order: 2; /* Change the order to make it appear below the content on small screens */
-    max-width: 100%;
+    max-width: 60%;
     height: auto;
 }
 
@@ -1198,3 +1197,18 @@ ul {
         align-items: center;
     }
 }
+/* Add your existing CSS styles here */
+
+/* Create a full-page overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 255, 0.3); /* Semi-transparent blue background */
+    z-index: 1; /* Place it above other content */
+    display: none;
+    cursor: pointer;
+}
+
