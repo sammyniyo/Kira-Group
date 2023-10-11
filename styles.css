@@ -1076,3 +1076,39 @@ ul {
         width: auto;
     }
 }
+/* Add this CSS to your stylesheet */
+@media screen and (max-width: 768px) {
+    .Introduction {
+        flex-direction: column; /* Stack sections vertically on small screens */
+    }
+
+    .Introduction-content {
+        order: 2; /* Change the order to make it appear below the video */
+    }
+}
+
+.Introduction {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.Introduction-content {
+    order: 1;
+}
+
+.Video {
+    order: 3; /* Change the order to make it appear after the Introduction content */
+    width: 100%;
+    max-width: 768px; /* Optional: Limit the video width */
+    margin: 0 auto; /* Center the video on larger screens */
+}
+
+/* Additional CSS for video responsiveness */
+video {
+    max-width: 100%;
+    height: auto;
+}
