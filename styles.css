@@ -194,9 +194,11 @@ footer {
     text-align: justify;
     border-radius: 40px;
 }
-text{
+
+text {
     text-align: justify;
 }
+
 .person-container .person img {
     height: 200px;
     width: auto;
@@ -246,6 +248,7 @@ text{
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
 .contact-form h3 {
     margin-top: 0;
 }
@@ -568,39 +571,51 @@ services {
 
     /* Adjust text size for smaller screens */
     .Title {
-        font-size: 6px; /* Reduce font size for the title */
-        margin-bottom: 3em; /* Reduce margin */
+        font-size: 6px;
+        /* Reduce font size for the title */
+        margin-bottom: 3em;
+        /* Reduce margin */
     }
 
     .Introduction-content {
-        margin-top: 10px; /* Reduce margin */
-        margin-bottom: 3em; /* Reduce margin */
+        margin-top: 10px;
+        /* Reduce margin */
+        margin-bottom: 3em;
+        /* Reduce margin */
     }
 }
+
 @media screen and (max-width: 768px) {
     .contact-form {
-      flex-direction: column; /* Change the direction to column for smaller screens */
+        flex-direction: column;
+        /* Change the direction to column for smaller screens */
     }
-  
+
     .welcome {
-      order: 1; /* Change the order to display "welcome" below "contact-form" */
-      margin-top: 20px; /* Add some space between the two sections */
+        order: 1;
+        /* Change the order to display "welcome" below "contact-form" */
+        margin-top: 20px;
+        /* Add some space between the two sections */
     }
-  }
-  
+}
+
 @media (max-width: 768px) {
     .sidebar-image {
         /* Adjust styles for smaller screens if needed */
-        max-width: 100%; /* Example: Reduce the image width */
-        margin-right: 5px; /* Example: Adjust margin */
+        max-width: 100%;
+        /* Example: Reduce the image width */
+        margin-right: 5px;
+        /* Example: Adjust margin */
     }
 }
+
 /* Style the logo button */
 .logo-button {
     background: none;
     border: none;
     padding: 0;
 }
+
 /* Set a fixed size for the image within the button */
 .logo-button img {
     width: 100px;
@@ -737,8 +752,11 @@ services {
         text-decoration: none;
     }
 }
+
 @media (max-width: 768px) {
-    .Introduction, .Video {
+
+    .Introduction,
+    .Video {
         width: 100%;
         margin: 0;
         padding: 0;
@@ -759,12 +777,14 @@ services {
             transform: scale(0);
             opacity: 0;
         }
+
         100% {
             transform: scale(1);
             opacity: 1;
         }
     }
 }
+
 /* Keyframes for fading in the new image */
 @keyframes fade-in {
     0% {
@@ -802,30 +822,36 @@ services {
         transform: scale(1);
         opacity: 1;
     }
-    
+
 }
+
 @media (max-width: 768px) {
     .sidebar .logo-button img {
-        width: 80px; /* Adjust the size as needed */
+        width: 80px;
+        /* Adjust the size as needed */
         height: auto;
     }
 
     /* Zoom-out effect for images with a delay of 0.6s */
     img {
         animation: zoomOut 0.6s 0.6s both;
-        max-width: 100%; /* Example: Reduce the image width */
-        margin-right: 5px; /* Example: Adjust margin */
+        max-width: 100%;
+        /* Example: Reduce the image width */
+        margin-right: 5px;
+        /* Example: Adjust margin */
     }
 
     @keyframes zoomOut {
         0% {
             transform: scale(1.2);
         }
+
         100% {
             transform: scale(1);
         }
     }
 }
+
 /* Apply the "pop" animation to specific elements */
 .pop-text {
     animation: pop 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -928,13 +954,17 @@ services {
     margin-right: 10px;
     /* Adjust the margin between images */
 }
+
 /* Add this CSS rule to remove underline on small devices */
 /* Add these CSS rules to your existing stylesheet */
 .title-heading {
     font-weight: bold;
-    animation: wipe 3s ease-in-out, zoom-out 3s ease-in-out; /* Apply the wipe and zoom-out animations */
-    white-space: nowrap; /* Prevent line breaks */
-    overflow: hidden; /* Hide overflow content */
+    animation: wipe 3s ease-in-out, zoom-out 3s ease-in-out;
+    /* Apply the wipe and zoom-out animations */
+    white-space: nowrap;
+    /* Prevent line breaks */
+    overflow: hidden;
+    /* Hide overflow content */
     color: green;
 }
 
@@ -943,6 +973,7 @@ services {
     0% {
         width: 0;
     }
+
     100% {
         width: 100%;
     }
@@ -953,15 +984,19 @@ services {
     0% {
         transform: scale(1);
     }
+
     100% {
         transform: scale(0);
     }
 }
+
 /* Define the custom CSS class for the animation container */
 .animation-container {
-    opacity: 0; /* Start with opacity set to 0 */
-    transform: translateY(20px); /* Start with a downward translation */
-
+    opacity: 0;
+    /* Start with opacity set to 0 */
+    transform: translateY(20px);
+    /* Start with a downward translation */
+    text-align: justify;
     /* Apply the animation */
     animation: ascend 3s ease-in-out 0.2s forwards;
     text-shadow: 2px 2px 4px yellow;
@@ -971,13 +1006,17 @@ services {
 @keyframes ascend {
     0% {
         opacity: 0;
-        transform: translateY(20px); /* Start position */
+        transform: translateY(20px);
+        /* Start position */
     }
+
     100% {
         opacity: 1;
-        transform: translateY(0); /* End position */
+        transform: translateY(0);
+        /* End position */
     }
 }
+
 footer {
     background-color: #f0f0f0;
     padding: 20px 0;
@@ -1004,10 +1043,11 @@ hr {
 .footer-section h3 {
     margin-top: 0;
 }
+
 .footer-section text {
     strong {
         font-weight: bold;
-      }      
+    }
 }
 
 ul {
@@ -1015,20 +1055,29 @@ ul {
     padding: 0;
 }
 
-.footer-nav, .footer-news, .footer-quick-links {
+.footer-nav,
+.footer-news,
+.footer-quick-links {
     padding: 0;
 }
 
-.footer-nav-link, .footer-news a, .footer-quick-links a {
+.footer-nav-link,
+.footer-news a,
+.footer-quick-links a {
     text-decoration: ;
     color: rgb(66, 66, 177);
 }
+
 /* Add a hover effect with a rectangular border */
 .footer-nav-link:hover {
-    border: 1px solid green; /* Add a green rectangular border on hover */
-    padding: 3px; /* Add some padding to make it more rectangular */
-    display: inline-block; /* Ensure the border doesn't cover the entire width */
-    color: green; /* Change the text color to green on hover */
+    border: 1px solid green;
+    /* Add a green rectangular border on hover */
+    padding: 3px;
+    /* Add some padding to make it more rectangular */
+    display: inline-block;
+    /* Ensure the border doesn't cover the entire width */
+    color: green;
+    /* Change the text color to green on hover */
 }
 
 .footer-news a:hover,
@@ -1038,6 +1087,7 @@ ul {
     display: inline-block;
     color: green;
 }
+
 /* Add this CSS to your "styles.css" file or in a separate CSS file */
 .About-Us {
     display: flex;
@@ -1051,9 +1101,11 @@ ul {
     text-align: justify;
     padding: 20px;
 }
+
 .about-us text {
     text-align: justify;
 }
+
 .about-us-image {
     flex: 1;
     padding: 20px;
@@ -1064,7 +1116,9 @@ ul {
 .post {
     text-align: justify;
 }
+
 @media screen and (min-width: 768px) {
+
     /* Reset the layout for screens wider than 768px */
     .about-us {
         flex-direction: row;
@@ -1076,14 +1130,17 @@ ul {
         width: auto;
     }
 }
+
 /* Add this CSS to your stylesheet */
 @media screen and (max-width: 768px) {
     .Introduction {
-        flex-direction: column; /* Stack sections vertically on small screens */
+        flex-direction: column;
+        /* Stack sections vertically on small screens */
     }
 
     .Introduction-content {
-        order: 2; /* Change the order to make it appear below the video */
+        order: 2;
+        /* Change the order to make it appear below the video */
     }
 }
 
@@ -1101,10 +1158,13 @@ ul {
 }
 
 .Video {
-    order: 3; /* Change the order to make it appear after the Introduction content */
+    order: 3;
+    /* Change the order to make it appear after the Introduction content */
     width: 100%;
-    max-width: 768px; /* Optional: Limit the video width */
-    margin: 0 auto; /* Center the video on larger screens */
+    max-width: 768px;
+    /* Optional: Limit the video width */
+    margin: 0 auto;
+    /* Center the video on larger screens */
 }
 
 /* Additional CSS for video responsiveness */
