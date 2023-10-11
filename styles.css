@@ -680,7 +680,7 @@ services {
     .person-container {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: justify;
         align-items: center;
         /* Center items horizontally */
         margin: 20px auto;
@@ -707,6 +707,7 @@ services {
     .person-container {
         margin-top: 20px;
         /* Add top margin on small screens */
+        text-align: justify;
     }
 }
 
@@ -1050,11 +1051,16 @@ ul {
     text-align: justify;
     padding: 20px;
 }
-
+.about-us text {
+    text-align: justify;
+}
 .about-us-image {
     flex: 1;
     padding: 20px;
+    max-width: 100%;
+    height: auto;
 }
-post {
+
+.post {
     text-align: justify;
 }
