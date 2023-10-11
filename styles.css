@@ -195,6 +195,15 @@ footer {
     border-radius: 40px;
 }
 
+/* Add a media query for smartphones and tablets */
+@media screen and (max-width: 768px) {
+    .text-box {
+        width: 100%; /* Set width to 100% to center the content */
+        margin: 0 auto; /* Center the box horizontally */
+    }
+}
+
+
 text {
     text-align: justify;
 }
@@ -1143,7 +1152,7 @@ ul {
 }
 /* Add this CSS to your stylesheet */
 .Video {
-    order: 3; /* Change the order to make it appear below the Introduction-content on small screens */
+    order: ; /* Change the order to make it appear below the Introduction-content on small screens */
 }
 
 @media screen and (min-width: 768px) {
