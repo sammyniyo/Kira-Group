@@ -1182,3 +1182,12 @@ video {
     max-width: 100%;
     height: auto;
 }
+/* Add this CSS to your stylesheet */
+.blog-post {
+    text-align: justify; /* Default text justification */
+
+    /* Media query for small screens (e.g., phones and tablets) */
+    @media screen and (max-width: 768px) {
+        text-align: left; /* Reset to left alignment for small screens */
+    }
+}
