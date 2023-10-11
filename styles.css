@@ -1117,7 +1117,16 @@ ul {
 .post {
     text-align: justify;
 }
+.about-us {
+    display: flex;
+    flex-direction: column;
+}
 
+.about-us-image {
+    order: 1; /* Change the order to make it appear below the content on small screens */
+    max-width: 100%;
+    height: auto;
+}
 @media screen and (min-width: 768px) {
 
     /* Reset the layout for screens wider than 768px */
