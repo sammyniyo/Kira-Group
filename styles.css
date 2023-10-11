@@ -301,6 +301,7 @@ text {
 .text {
     margin-top: 4em;
     /* Add margin at the top to create space */
+    text-align: justify;
 }
 
 .full-width-image {
