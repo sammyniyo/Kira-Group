@@ -191,10 +191,12 @@ footer {
     /* Add some space between text and border */
     width: 300px;
     /* Set the width of the box */
-    text-align: center;
+    text-align: justify;
     border-radius: 40px;
 }
-
+text{
+    text-align: justify;
+}
 .person-container .person img {
     height: 200px;
     width: auto;
@@ -244,7 +246,6 @@ footer {
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
 .contact-form h3 {
     margin-top: 0;
 }
@@ -643,7 +644,7 @@ services {
 .publications {
     display: flex;
     flex-direction: column;
-    /* Default layout, vertical on larger screens */
+    text-align: justify;
 }
 
 /* Style for the imagepub div */
@@ -662,7 +663,7 @@ services {
     }
 
     .publications {
-        text-align: center;
+        text-align: justify;
         /* Center the text horizontally on smaller screens */
     }
 
@@ -962,6 +963,7 @@ services {
 
     /* Apply the animation */
     animation: ascend 3s ease-in-out 0.2s forwards;
+    text-shadow: 2px 2px 4px yellow;
 }
 
 /* Keyframes for the ascend animation */
@@ -1001,6 +1003,11 @@ hr {
 .footer-section h3 {
     margin-top: 0;
 }
+.footer-section text {
+    strong {
+        font-weight: bold;
+      }      
+}
 
 ul {
     list-style: none;
@@ -1012,8 +1019,42 @@ ul {
 }
 
 .footer-nav-link, .footer-news a, .footer-quick-links a {
-    text-decoration: none;
-    color: blue;
+    text-decoration: ;
+    color: rgb(66, 66, 177);
+}
+/* Add a hover effect with a rectangular border */
+.footer-nav-link:hover {
+    border: 1px solid green; /* Add a green rectangular border on hover */
+    padding: 3px; /* Add some padding to make it more rectangular */
+    display: inline-block; /* Ensure the border doesn't cover the entire width */
+    color: green; /* Change the text color to green on hover */
 }
 
-/* Add additional styles as needed */
+.footer-news a:hover,
+.footer-quick-links a:hover {
+    border: 1px solid green;
+    padding: 3px;
+    display: inline-block;
+    color: green;
+}
+/* Add this CSS to your "styles.css" file or in a separate CSS file */
+.About-Us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.about-us-content {
+    flex: 1;
+    text-align: justify;
+    padding: 20px;
+}
+
+.about-us-image {
+    flex: 1;
+    padding: 20px;
+}
+post {
+    text-align: justify;
+}
