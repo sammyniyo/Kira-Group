@@ -1161,3 +1161,21 @@ ul {
         text-align: left; /* Reset to left alignment for small screens */
     }
 }
+/* Add this CSS to your stylesheet */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px; /* Adjust the font size as needed */
+    }
+
+    h2 {
+        font-size: 20px; /* Adjust the font size as needed */
+    }
+
+    h3 {
+        font-size: 18px; /* Adjust the font size as needed */
+    }
+
+    h5 {
+        font-size: 16px; /* Adjust the font size as needed */
+    }
+}
